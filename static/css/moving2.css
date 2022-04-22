@@ -1,0 +1,36 @@
+.ml6 {
+    position: relative;
+    font-weight: 900;
+    font-size: 10vmin;
+  }
+  /* 改變位置 */
+  .ml6 .text-wrapper {
+    position:relative;
+    display: inline-block;
+    padding-top: 0.3em;
+    padding-left: 10vh;
+    padding-right: 0.5em;
+    padding-bottom: 0.3em;
+    overflow: hidden;
+    text-align: end;
+  }
+  
+ 
+  @media(max-width:700px){
+    .ml6 .text-wrapper {padding-top: 0.4em;}
+  }
+  @media(max-width:625px){
+    .ml6 .text-wrapper{
+      font-size: 9vmin;
+      padding-top: 10vh;
+      text-align: start;
+    }
+  }
+  @media(max-width:375px){
+    .ml6 .text-wrapper {padding-top: 11vh;}
+  }
+  .ml6 .letter {
+    display: inline-block;
+    line-height: 1em;
+    
+  }

@@ -1,0 +1,150 @@
+.kv{
+    width: 100%;
+    height: 100vh;
+    background-image: url('../BGI.jpg');
+    background-size: cover;
+    
+  }
+  .text-t{
+    /* text-align: center; */
+    margin-top: 35vh;
+    font-size: 3rem;
+    font-weight:800;
+    text-transform: uppercase;
+    color: white; text-shadow: black 0.1em 0.1em 0.1em
+  }
+.tex{
+    text-decoration: underline;
+    font-size: 20px;
+    font-weight: 300;
+    color: white; text-shadow: black 0.1em 0.1em 0.1em
+}
+
+nav {
+    font-weight:600;
+    color: white; text-shadow: black 0.1em 0.1em 0.1em
+}
+nav {
+    display: inline-block; 
+    justify-content:right; 
+    /* position: relative; left: 50%; */
+} 
+
+
+/* 123旁邊的小三角形 */
+.caret{
+    display: inline-block;
+    width: 0;
+    height: 0;
+    margin-left: 2px;
+    vertical-align: middle;
+    border-top: 5px dashed;
+    border-right: 5px solid transparent;
+    border-left: 5px solid transparent;
+}
+
+
+
+
+
+
+/* DDM start
+
+    /* 取消ul預設的內縮及樣式 */
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+    /* 字體跟位置 */
+ul.DDM { 
+    
+    /* position: static; */
+    font-family: 'Open Sans', Arial, sans-serif;
+    margin: 40px;
+    font-size: 25px;
+    }
+@media(max-width:500px){
+    ul.DDM { 
+        font-family: 'Open Sans', Arial, sans-serif;
+        margin: 10px -10px 30px 0px;
+        font-size: 15px;
+        }
+}
+.DDM {
+    justify-content: end;
+}
+ul.DDM a  {
+    color: rgb(252, 248, 248);
+    display: block;
+    padding: 0px 27px;
+    /* border-radius: 10px 20px 30px 40px; */
+    text-decoration: none;
+    line-height: 30px;
+}
+    
+    /* 排版改水平 */
+ul.DDM {
+    display: flex; 
+}
+    /* 最後3不要有邊框   */
+ul.DDM>li:last-child {
+    border-right: none;
+  }
+    /* 控制第二、三層邊框 */
+ul.DDM ul li {
+    border-right: none;
+    border-bottom: rgb(92, 92, 92) 1px solid;
+  }
+  /* 控制第二、層 最外層邊框及大小 */
+ul.DDM ul {
+
+    border-bottom: rgb(92, 92, 92) 1px solid;
+    min-width: 30px;
+}
+
+    /* function area start */
+    /* 第二層選單 */
+ul.DDM li {
+    position: relative;
+    white-space: nowrap;
+    border-right: rgb(92, 92, 92) 1px solid;
+    
+    }
+    /* 第二層出現位置 */
+ul.DDM ul {
+    
+    position: absolute; 
+    z-index: 99;
+    left: 30px;
+    top: 100%;
+}
+    
+
+    /*第三層以後的選單出現位置與第二層不同*/
+ul.DDM ul ul {
+    z-index: 999;
+    top: 10px;
+    left: 90%;
+}
+
+/* 滑鼠滑入展開次選單*/
+ul.DDM li:hover>ul {
+    display: block;
+    }
+
+    /*隱藏次選單*/
+ul.DDM ul {
+    display: none;
+    } 
+/* 滑鼠移入次選單上層文字保持變色*/
+ul.DDM li:hover>a {
+    color: #ef5c28;
+}
+    /* function area end */
+
+/* DDM end */
+
+
+

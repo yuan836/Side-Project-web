@@ -1,0 +1,13 @@
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    background-image: url('atago.jpg');
+    
+    background-repeat:no-repeat ;
+
+    background-size:100% 100%; 
+
+    background-attachment: fixed;
+    opacity: 0.6;
+}

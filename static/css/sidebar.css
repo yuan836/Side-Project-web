@@ -1,0 +1,147 @@
+/* 返回頂部按鈕控制 */
+.back-to-top {
+  /* content: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 16 16'%3e%3cpath fill='none' stroke='rgba%280,0,0,.5%29' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M5 14l6-6-6-6'/%3e%3c/svg%3e"); */
+  display: none; /* 默認是隱藏的，這樣在第一屏才不顯示 */
+  position: fixed; /* 位置是固定的 */
+  bottom: 20px; /* 顯示在頁面底部 */
+  right: 30px; /* 顯示在頁面的右邊 */
+  z-index: 99; /* 確保不被其他功能覆蓋 */
+  border: 1px solid gray; /* 顯示邊框 */
+  outline: none; /* 不顯示外框 */
+  background-color: rgb(196, 57, 57); /* 設置背景背景顏色 */
+  color: rgb(220, 220, 231); /* 設置文本顏色 */
+  cursor: pointer; /* 滑鼠移到按鈕上顯示手型 */
+  padding: 10px 15px 15px 15px; /* 增加一些內邊距 */
+  border-radius: 15px; /* 增加圓角 */  
+  font-weight:900;  
+  font-size: large;
+}
+
+.back-to-top:hover {
+  background-color:rgb(173, 51, 51); /* 滑鼠移上去時，反轉顏色 */
+  color: #fff;
+}
+/* social圖標 控制 */
+/* @media(max-width: 715px){
+  .social_media{
+    display: none !important;
+  }
+} */
+
+.social_media{
+  
+  position: fixed;
+  bottom: 0;
+  left: 80px; 
+  transform: translateX(-50%);
+  display: flex;
+}
+
+.social_media a{
+  display: block;
+  width: 40px;
+  background: #594f8d;
+  height: 40px;
+  line-height: 45px;
+  text-align: center;
+  margin: 0 5px;
+  color: #bdb8d7;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+/* @media(max-width: 500px){
+  .social_media{
+    
+    left: 40px;
+  }
+  .social_media a{
+    
+    width: 20px;
+    line-height: 22.5px;
+    height: 20px;
+} */
+.social_media a:hover{
+  display: block;
+  width: 40px;
+  background: #8775d4;
+  height: 40px;
+  line-height: 45px;
+  text-align: center;
+  margin: 0 5px;
+  color: #bdb8d7;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+
+
+.bi {
+vertical-align: -.125em;
+pointer-events: none;
+fill: currentColor;
+}
+
+
+.barsize{
+    padding-left: 0px!important;
+    width: 150px ;
+}
+/* 大於915用這個size */
+@media(min-width:915px){
+  .barsize{
+      width: 199px ;
+  }
+}
+.dropdown-toggle { outline: 0; }
+
+/* .nav-flush .nav-link {
+border-radius: 0;
+} */
+/* 字體 */
+.btn-toggle {
+display: inline-flex;
+align-items: center;
+padding: .25rem .5rem;
+font-weight: 600;
+color: rgba(0, 0, 0, .65);
+background-color: transparent;
+border: 0;
+}
+/* 選單移動上去顏色顯示 */
+.btn-toggle:hover,
+.btn-toggle:focus {
+color: rgba(0, 0, 0, .85);
+background-color: #d2f4ea;
+}
+/* w3c > 圖案 */
+.btn-toggle::before {
+width: 1.25em;
+line-height: 0;
+content: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 16 16'%3e%3cpath fill='none' stroke='rgba%280,0,0,.5%29' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M5 14l6-6-6-6'/%3e%3c/svg%3e");
+transition: transform .35s ease;
+transform-origin: .5em 50%;
+}
+/* 圖案旋轉 */
+.btn-toggle[aria-expanded="true"] {
+color: rgba(0, 0, 0, .85);
+}
+.btn-toggle[aria-expanded="true"]::before {
+transform: rotate(90deg);
+}
+/* 二層選單字體 */
+.btn-toggle-nav a {
+display: inline-block;
+padding: .1875rem .5rem;
+margin-top: .125rem;
+margin-left: 1.25rem;
+text-decoration: none;
+}
+.btn-toggle-nav a:hover,
+.btn-toggle-nav a:focus {
+background-color: #d2f4ea;
+}
+
+/* 最上面字體大小 */
+.fw-semibold { font-weight: 600;}
+
+
